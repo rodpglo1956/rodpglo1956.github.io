@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tradefront | Your website is already built</title>
+<meta name="description" content="We build a complete website for your contracting business before you pay a dime. If you like it, claim it for $497. If not, it comes down.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 128 128'%3E%3Crect width='128' height='128' rx='26' fill='%230F1A2B'/%3E%3Cpath d='M22 44h84l8 18H14z' fill='%23F5A524'/%3E%3Crect x='24' y='70' width='80' height='34' rx='4' fill='%23fff'/%3E%3Crect x='56' y='76' width='16' height='28' rx='2' fill='%230F1A2B'/%3E%3C/svg%3E">
+<style>
+  :root{--navy:#0F1A2B;--navy-2:#16243A;--amber:#F5A524;--amber-dark:#E8880C;--ink:#111827;--muted:#5B6B80;--paper:#F7F5F0;--white:#fff;--line:#E4E7EC}
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:var(--white);line-height:1.55;-webkit-font-smoothing:antialiased}
+  a{color:inherit;text-decoration:none}
+  .wrap{max-width:1120px;margin:0 auto;padding:0 22px}
+  header{position:sticky;top:0;z-index:30;background:rgba(15,26,43,.96);backdrop-filter:blur(8px);color:#fff}
+  .nav{display:flex;align-items:center;justify-content:space-between;height:70px}
+  .brand{display:flex;align-items:center;gap:10px;font-weight:800;font-size:20px;letter-spacing:-.5px}
+  .brand svg{width:34px;height:34px}
+  .brand em{font-style:normal;color:var(--amber)}
+  .nav nav{display:none;gap:26px;font-weight:600;font-size:15px;color:#C9D2DE}
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:14px 22px;border-radius:12px;font-weight:700;font-size:15px;border:0;cursor:pointer;transition:transform .12s ease,filter .12s ease}
+  .btn:hover{filter:brightness(1.05)}
+  .btn:active{transform:scale(.98)}
+  .btn-amber{background:var(--amber);color:var(--navy)}
+  .btn-outline{background:transparent;color:#fff;border:1.5px solid rgba(255,255,255,.35)}
+  .btn-navy{background:var(--navy);color:#fff}
+  .hero{background:var(--navy);color:#fff;padding:72px 0 64px;position:relative;overflow:hidden}
+  .hero:before{content:"";position:absolute;inset:auto -10% -40% auto;width:60%;height:120%;background:radial-gradient(closest-side,rgba(245,165,36,.16),transparent 70%);pointer-events:none}
+  .hero-grid{display:grid;gap:40px;align-items:center;position:relative}
+  .kicker{display:inline-flex;align-items:center;gap:10px;background:rgba(245,165,36,.12);border:1px solid rgba(245,165,36,.35);color:var(--amber);padding:7px 14px;border-radius:999px;font-size:13px;font-weight:700;letter-spacing:.4px}
+  h1{font-size:clamp(38px,6vw,68px);line-height:1.02;letter-spacing:-2.2px;font-weight:800;margin:20px 0 18px}
+  h1 span{color:var(--amber)}
+  .lead{font-size:19px;color:#C9D2DE;max-width:560px}
+  .cta-row{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+  .proof{display:flex;flex-wrap:wrap;gap:10px 22px;margin-top:30px;color:#AEB9C8;font-size:14px;font-weight:600}
+  .proof b{color:#fff}
+  .browser{background:#fff;border-radius:16px;overflow:hidden;box-shadow:0 40px 80px rgba(0,0,0,.45);border:1px solid rgba(255,255,255,.12)}
+  .browser .bar{display:flex;align-items:center;gap:8px;padding:10px 14px;background:#EEF1F5;border-bottom:1px solid var(--line)}
+  .browser .bar i{width:10px;height:10px;border-radius:50%;background:#D5DAE1;display:inline-block}
+  .browser .bar .url{flex:1;margin-left:8px;background:#fff;border-radius:6px;padding:5px 10px;font-size:12px;color:var(--muted);font-family:ui-monospace,Menlo,monospace}
+  .browser iframe{width:100%;height:440px;border:0;display:block;background:#fff}
+  section{padding:80px 0}
+  .head{max-width:680px;margin-bottom:40px}
+  .head h2{font-size:clamp(28px,4vw,44px);letter-spacing:-1.4px;line-height:1.08;margin-bottom:12px}
+  .head p{font-size:18px;color:var(--muted)}
+  .steps{display:grid;gap:18px;counter-reset:s}
+  .step{background:var(--paper);border-radius:18px;padding:26px;position:relative}
+  .step:before{counter-increment:s;content:"0" counter(s);font-weight:800;font-size:13px;letter-spacing:2px;color:var(--amber-dark)}
+  .step h3{font-size:20px;margin:10px 0 8px;letter-spacing:-.4px}
+  .step p{color:var(--muted);font-size:16px}
+  .inc{display:grid;gap:12px}
+  .inc div{display:flex;gap:12px;align-items:flex-start;padding:16px 18px;border:1px solid var(--line);border-radius:14px;font-size:15px}
+  .inc div b{display:block;margin-bottom:2px}
+  .inc div span{color:var(--muted);font-size:14px}
+  .check{flex:none;width:24px;height:24px;border-radius:50%;background:var(--navy);color:var(--amber);display:grid;place-items:center;font-size:13px;font-weight:800}
+  .pricing{background:var(--navy);color:#fff}
+  .pricing .head p{color:#C9D2DE}
+  .plans{display:grid;gap:18px}
+  .plan{background:var(--navy-2);border:1px solid rgba(255,255,255,.1);border-radius:20px;padding:30px}
+  .plan.hot{border-color:var(--amber);box-shadow:0 0 0 4px rgba(245,165,36,.12)}
+  .plan .tag{font-size:12px;font-weight:800;letter-spacing:2px;color:var(--amber);text-transform:uppercase}
+  .plan .price{font-size:52px;font-weight:800;letter-spacing:-2.5px;margin:10px 0 2px}
+  .plan .price small{font-size:18px;letter-spacing:0;color:#AEB9C8;font-weight:600}
+  .plan p{color:#C9D2DE;font-size:15px}
+  .plan ul{list-style:none;margin:18px 0 24px;display:grid;gap:9px;font-size:15px}
+  .plan li:before{content:"✓";color:var(--amber);font-weight:800;margin-right:10px}
+  .addons{display:grid;gap:12px;margin-top:18px}
+  .addon{display:flex;justify-content:space-between;gap:12px;padding:16px 18px;border:1px dashed rgba(255,255,255,.25);border-radius:14px;font-size:15px}
+  .addon b{color:var(--amber);white-space:nowrap}
+  .guarantee{background:var(--paper)}
+  .g-card{background:#fff;border:2px solid var(--navy);border-radius:22px;padding:34px;display:grid;gap:14px}
+  .g-card h3{font-size:26px;letter-spacing:-.8px}
+  .g-card p{color:var(--muted);font-size:17px}
+  .faq{display:grid;gap:10px}
+  details{border:1px solid var(--line);border-radius:14px;padding:18px 20px}
+  summary{cursor:pointer;font-weight:700;font-size:16px;list-style:none;display:flex;justify-content:space-between;gap:14px}
+  summary:after{content:"+";color:var(--amber-dark);font-weight:800;font-size:20px;line-height:1}
+  details[open] summary:after{content:"–"}
+  details p{margin-top:12px;color:var(--muted);font-size:15px}
+  .claim{background:var(--navy);color:#fff}
+  .claim-grid{display:grid;gap:36px;align-items:start}
+  .form{background:#fff;color:var(--ink);border-radius:20px;padding:28px}
+  .field{display:flex;flex-direction:column;gap:6px;margin-bottom:14px;font-size:13px;font-weight:700;color:var(--muted)}
+  .field input,.field select,.field textarea{font:inherit;font-size:16px;padding:13px 14px;border:1.5px solid var(--line);border-radius:10px;color:var(--ink);background:#fff}
+  .field input:focus,.field select:focus,.field textarea:focus{outline:none;border-color:var(--amber-dark)}
+  .row{display:grid;gap:0 12px}
+  .hp{position:absolute;left:-9999px;opacity:0}
+  .msg{display:none;margin-top:12px;padding:14px;border-radius:10px;font-weight:600;font-size:15px}
+  .msg.ok{background:#ECFDF3;color:#065F46;border:1px solid #A6F4C5}
+  .msg.err{background:#FEF3F2;color:#B42318;border:1px solid #FECDCA}
+  footer{padding:36px 0;background:#0A121F;color:#8E9BAD;font-size:14px}
+  footer .wrap{display:flex;flex-wrap:wrap;gap:14px;justify-content:space-between;align-items:center}
+  @media(min-width:900px){.nav nav{display:flex}.hero-grid{grid-template-columns:1fr 1fr}.steps{grid-template-columns:repeat(3,1fr)}.inc{grid-template-columns:repeat(2,1fr)}.plans{grid-template-columns:1fr 1fr}.claim-grid{grid-template-columns:1fr 1fr}.row{grid-template-columns:1fr 1fr}}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#top">
+      <svg viewBox="0 0 128 128" aria-hidden="true"><rect width="128" height="128" rx="26" fill="#0F1A2B" stroke="rgba(255,255,255,.18)" stroke-width="3"/><path d="M22 44h84l8 18H14z" fill="#F5A524"/><circle cx="26" cy="62" r="8" fill="#F5A524"/><circle cx="48" cy="62" r="8" fill="#F5A524"/><circle cx="70" cy="62" r="8" fill="#F5A524"/><circle cx="92" cy="62" r="8" fill="#F5A524"/><rect x="24" y="70" width="80" height="34" rx="4" fill="#fff"/><rect x="56" y="76" width="16" height="28" rx="2" fill="#0F1A2B"/><rect x="16" y="104" width="96" height="4" rx="2" fill="#F5A524"/></svg>
+      Trade<em>front</em>
+    </a>
+    <nav><a href="#how">How it works</a><a href="#included">What you get</a><a href="#pricing">Pricing</a><a href="#faq">FAQ</a></nav>
+    <a class="btn btn-amber" href="#claim">Check if yours is built</a>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <div class="kicker">For contractors with no website</div>
+        <h1>Your website is <span>already built.</span></h1>
+        <p class="lead">We build a real, finished website for your business before you ever pay a dime. Look at it. Keep it for $497. Or don't, and it comes down. No meetings. No contracts. No tech talk.</p>
+        <div class="cta-row">
+          <a class="btn btn-amber" href="#claim">Check if yours is built</a>
+          <a class="btn btn-outline" href="https://rodpglo1956.github.io/coastal-pressure-pros/" target="_blank" rel="noopener">See one we built</a>
+        </div>
+        <div class="proof">
+          <div><b>Live in 48 hours</b> on your own .com</div>
+          <div><b>Click-to-call</b> from Google on any phone</div>
+          <div><b>7-day</b> money-back guarantee</div>
+        </div>
+      </div>
+      <div class="browser">
+        <div class="bar"><i></i><i></i><i></i><span class="url">coastalpressurepros.com</span></div>
+        <iframe src="https://rodpglo1956.github.io/coastal-pressure-pros/" title="Sample site built by Tradefront" loading="lazy"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <section id="how">
+    <div class="wrap">
+      <div class="head"><h2>How it works</h2><p>Most web guys want a meeting, a deposit, and six weeks. We do it backwards.</p></div>
+      <div class="steps">
+        <div class="step"><h3>We build it first</h3><p>We use what is already public about your business: your name, phone, services, hours, and Google reviews. A finished site, not a mockup.</p></div>
+        <div class="step"><h3>You look at it</h3><p>We send you the live link. Open it on your phone. Show your wife, your crew, your buddy who does this stuff. Take a week.</p></div>
+        <div class="step"><h3>Claim it or let it go</h3><p>Like it? Pay $497 and it goes on your own domain within 48 hours. Don't? It comes down and you never hear from us again.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="included" style="background:var(--paper)">
+    <div class="wrap">
+      <div class="head"><h2>What you get for $497</h2><p>Everything a customer needs to pick you over the next guy on Google.</p></div>
+      <div class="inc">
+        <div><span class="check">✓</span><div><b>Your own .com</b><span>Registered in your name. You own it, not us.</span></div></div>
+        <div><span class="check">✓</span><div><b>Built for phones first</b><span>Big call button. Tap to text. Loads in under 2 seconds on a bad signal.</span></div></div>
+        <div><span class="check">✓</span><div><b>Quote request form</b><span>Leads go straight to your phone as a text. No app to check.</span></div></div>
+        <div><span class="check">✓</span><div><b>Your Google reviews, on the site</b><span>Your best reviews doing the selling for you.</span></div></div>
+        <div><span class="check">✓</span><div><b>Services, hours, and service area</b><span>So customers stop calling to ask if you cover their town.</span></div></div>
+        <div><span class="check">✓</span><div><b>Set up to show on Google</b><span>Proper titles, local business markup, and a link from your Google Business Profile.</span></div></div>
+        <div><span class="check">✓</span><div><b>One round of edits</b><span>Change the words, swap the photos, add a service. Included.</span></div></div>
+        <div><span class="check">✓</span><div><b>SSL and hosting handled</b><span>The padlock, the uptime, the backups. You never think about it.</span></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="pricing" id="pricing">
+    <div class="wrap">
+      <div class="head"><h2>Pricing, in plain English</h2><p>One price to claim it. One small monthly to keep it running and edited. Cancel the monthly any time and keep your domain.</p></div>
+      <div class="plans">
+        <div class="plan hot">
+          <div class="tag">Claim your site</div>
+          <div class="price">$497 <small>one time</small></div>
+          <p>Everything listed above, live on your own .com within 48 hours of payment.</p>
+          <ul><li>Domain registered in your name</li><li>Mobile-first design with click-to-call</li><li>Quote form to your phone</li><li>Reviews, services, hours, service area</li><li>One round of edits included</li></ul>
+          <a class="btn btn-amber" href="#claim" style="width:100%">Check if yours is built</a>
+        </div>
+        <div class="plan">
+          <div class="tag">Hosting and care</div>
+          <div class="price">$39 <small>per month</small></div>
+          <p>Starts after your site is live. First charge lands 7 days after launch.</p>
+          <ul><li>Hosting, SSL, backups, uptime monitoring</li><li>Unlimited small text edits, 2-day turnaround</li><li>New reviews pulled in monthly</li><li>Seasonal promo banner on request</li><li>Cancel any time, keep your domain</li></ul>
+          <div class="addons">
+            <div class="addon"><span>Google Business Profile optimization, done for you</span><b>$297 once</b></div>
+            <div class="addon"><span>Every Google review answered within 24 hours, in your voice</span><b>$79 / mo</b></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="guarantee">
+    <div class="wrap">
+      <div class="g-card">
+        <h3>The 7-day no-questions guarantee</h3>
+        <p>If your site is live on your domain and you decide within 7 days that it is not for you, email us one line and we refund the $497 in full. You keep the domain. We take the site down. That is the whole policy.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq">
+    <div class="wrap">
+      <div class="head"><h2>Questions contractors actually ask</h2></div>
+      <div class="faq">
+        <details><summary>How did you build my site without talking to me?</summary><p>Your business name, phone number, services, hours, and reviews are already public on Google and the directories. We put them on a proper site, the way a good web designer would after a two-hour meeting. The edits round after payment covers anything we got wrong.</p></details>
+        <details><summary>I have a Facebook page. Isn't that enough?</summary><p>Facebook is where people who already know you find you. Google is where people who don't know you search "pressure washing near me" at 9 pm. Without a site, you are not in that race, and the guy with one is.</p></details>
+        <details><summary>Do I own it?</summary><p>Yes. The domain is registered in your name and you get the login. If you cancel the monthly, you keep the domain and we hand you a copy of the site files.</p></details>
+        <details><summary>What if I already have a website?</summary><p>Then this is not for you, unless it is slow, ugly, or not showing up. Send us the link and we will tell you honestly if it is worth replacing. No charge for the opinion.</p></details>
+        <details><summary>Are there hidden fees?</summary><p>No. $497 once, $39 per month after launch, and the two optional add-ons listed above. The domain renewal (about $15 a year) is covered in the monthly. Extra edit rounds beyond the included one are $49 each.</p></details>
+        <details><summary>How fast can it be live?</summary><p>Within 48 hours of payment, usually faster. Domain registration is the slowest part.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <section class="claim" id="claim">
+    <div class="wrap claim-grid">
+      <div>
+        <div class="head" style="margin-bottom:18px"><h2>Check if your site is already built</h2><p style="color:#C9D2DE">If we already built it, we send you the link within one business day. If we have not yet, we build it within 48 hours and send it. Either way, you pay nothing to look.</p></div>
+        <div class="proof" style="margin-top:8px"><div><b>No card required</b></div><div><b>No calls</b> unless you ask</div><div><b>Nothing to install</b></div></div>
+      </div>
+      <form class="form" id="lead" novalidate>
+        <label class="field">Business name<input name="business_name" required maxlength="120" placeholder="Coastal Pressure Pros"></label>
+        <div class="row">
+          <label class="field">Trade<select name="trade"><option>Pressure washing</option><option>Lawn care / landscaping</option><option>Handyman</option><option>Painting</option><option>Roofing</option><option>Plumbing</option><option>HVAC</option><option>Electrical</option><option>Fencing</option><option>Concrete</option><option>Tree service</option><option>Cleaning</option><option>Junk removal</option><option>Auto detailing / mobile mechanic</option><option>Other</option></select></label>
+          <label class="field">City<input name="city" maxlength="80" placeholder="Savannah, GA"></label>
+        </div>
+        <div class="row">
+          <label class="field">Phone<input name="phone" type="tel" maxlength="30" placeholder="(912) 555-0100"></label>
+          <label class="field">Email<input name="email" type="email" maxlength="120" placeholder="you@gmail.com"></label>
+        </div>
+        <label class="field">Anything we should know? (optional)<textarea name="message" rows="3" maxlength="1000" placeholder="We do roofs and gutters, not siding."></textarea></label>
+        <input class="hp" name="website" tabindex="-1" autocomplete="off">
+        <button class="btn btn-navy" type="submit" style="width:100%">Send me my link</button>
+        <div class="msg ok" id="ok">Got it. Watch your phone and email. We will send the link to your site within one business day.</div>
+        <div class="msg err" id="err">Something blocked the form. Email us instead: <a href="mailto:hello@tradefront.co" style="text-decoration:underline">hello@tradefront.co</a></div>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div>© <span id="yr"></span> Tradefront. Websites for the trades. Savannah, GA.</div>
+    <div>hello@tradefront.co</div>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('yr').textContent = new Date().getFullYear();
+  var SUPABASE_URL = 'https://tbjmavhifezsbbfjzzib.supabase.co';
+  var SUPABASE_KEY = 'sb_publishable_2dY1iAnVaJzhhWjtTpwisw_jSRsDWk2';
+  var form = document.getElementById('lead');
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    var d = new FormData(form);
+    if (d.get('website')) { return; }
+    var name = (d.get('business_name') || '').trim();
+    if (name.length < 2) { form.business_name.focus(); return; }
+    if (!(d.get('phone') || '').trim() && !(d.get('email') || '').trim()) { form.phone.focus(); form.phone.placeholder = 'Phone or email, we need one'; return; }
+    var btn = form.querySelector('button'); btn.disabled = true; btn.textContent = 'Sending';
+    var payload = { business_name: name, trade: d.get('trade'), city: d.get('city') || null, phone: d.get('phone') || null, email: d.get('email') || null, message: d.get('message') || null, source: location.hostname };
+    fetch(SUPABASE_URL + '/rest/v1/tradefront_leads', {
+      method: 'POST',
+      headers: { 'apikey': SUPABASE_KEY, 'Authorization': 'Bearer ' + SUPABASE_KEY, 'Content-Type': 'application/json', 'Prefer': 'return=minimal' },
+      body: JSON.stringify(payload)
+    }).then(function (r) {
+      if (!r.ok) throw new Error(r.status);
+      document.getElementById('ok').style.display = 'block'; form.reset(); btn.textContent = 'Sent';
+    }).catch(function () {
+      document.getElementById('err').style.display = 'block'; btn.disabled = false; btn.textContent = 'Send me my link';
+    });
+  });
+</script>
+</body>
+</html>
